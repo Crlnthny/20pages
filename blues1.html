@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MUSIC 1</title>
+
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main{
+            width: 100%;
+            background-color: #3066BE;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 26px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: black;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+
+        h1 {
+        text-align: center;
+        margin: 50px 0;
+        }
+        
+        .music-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .music-header img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+            margin-right: 50px;
+        }
+        
+        .music-header h2 {
+            font-size: 32px;
+        }
+        
+        .music-header p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+        .music-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .music-detail {
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .music-detail h3 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        
+        .music-detail p {
+            font-size: 18px;
+            margin: 0 20px 20px;
+        }
+        
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+        .music-header img {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .music-detail {
+            width: 200px;
+        }
+        }
+
+        .button{
+            padding:10px 20px; font-size:15px;
+        }
+
+        .button:hover{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="icon-bar">
+            <a href="index.html"><i class="fa fa-home"></i></a> 
+            <a href="info.html"><i class="fa fa-info"></i></i> 
+            <a class="active" href="music.html"><i class="fa fa-music"></i></a>
+            <a href="about.html"><i class="fa fa-lcok"></i></a>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </div>
+
+        <h1>HOOCHIE COOCHIE MAN</h1>
+  
+        <div class="music-header">
+            <img src="img/pic15.jpg" alt="Album Cover">
+            <div>
+            <h2>Artist Name: Muddy Waters</h2>
+            <p>Release Date: January 7, 1954 </p>
+            <p>BLUES</p>
+            </div>
+        </div>
+        <div class="music-details">
+            <div class="music-detail">
+            <h3>Track List</h3>
+            <p>Track 1: Mannish Boy</p>
+            <p>Track 2: Baby, Please Dont Go</p>
+            <p>Track 3: I Can't Be Satisfied</p>
+            <p>JAZZ</p>
+            </div>
+
+            <div class="music-detail">
+            <h3>Production Credits</h3>
+            <p>Producers: Leonard Chess</p>
+            <p>Songwriter: Willie Dixon</p>
+            </div>
+
+            <div style="text-align:center; margin:50px 0;">
+            <a href="blues.html">
+            <button class="button">Back to Music Library</button>
+            </a>
+
+    </div>
+</body>
+</html>

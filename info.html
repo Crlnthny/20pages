@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>INFORMATION</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin:0;
+            padding: 0;
+            position: fixed;
+        }
+
+        .main{
+            width: 100%;
+            background: url(img/pic2.png);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 26px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: black;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+
+
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .column h2{
+            text-align: center;
+            font-family: Verdana;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column p{
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="icon-bar">
+            <a href="index.html"><i class="fa fa-home"></i></a> 
+            <a class="active" href="info.html"><i class="fa fa-info"></i></i> 
+            <a href="music.html"><i class="fa fa-music"></i></a>
+            <a href="about.html"><i class="fa fa-lock"></i></a>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column" style="background-color: wheat; border: 2px solid black;">
+                <h2>POP</h2>
+                <p>Pop music is a genre of popular music that originated in the 1950s and became prominent in the 1960s. 
+                    It is characterized by its catchy melodies, simple harmonies, and upbeat rhythms. 
+                    Pop songs often have a verse-chorus structure, and the lyrics often deal with themes such as love, relationships, and having fun. 
+                    Pop music is typically seen as being more lightweight and commercially oriented than other forms of popular music.</p>
+            </div>
+            <div class="column" style="background-color:#000000; border: 2px solid #000; color: white;">
+                <h2>HIP HOP</h2>
+                <p>Hip hop is a genre of music that originated in African American and Latinx communities in the Bronx, New York City in the 1970s. 
+                    It encompasses a range of styles, including rap, breakdancing, and DJing. 
+                    Hip hop is characterized by its strong beats, rhythmic rhymes, and MCs (rappers) who chant or recite their lyrics over the music. 
+                    Hip hop often deals with themes such as social and political issues, race, and life in the inner city.</p>
+                </div>
+            <div class="column" style="background-color: wheat; border: 2px solid #000;">
+                <h2>ROCK</h2>
+                <p>Rock music is a genre that emerged in the 1950s and became popular in the 1960s and 1970s. 
+                    It is characterized by its amplified instruments (such as electric guitars, bass guitars, and drums), strong beat, and use of blues-inspired chord progressions. 
+                    Rock music often deals with themes such as rebellion, youth culture, and political and social issues. 
+                    There are many sub-genres of rock music, including classic rock, heavy metal, punk, and alternative.</p>
+            </div>
+            <div class="column" style="background-color:#000000; border: 2px solid #000; color: white;">
+                <h2>CLASSICAL</h2>
+                <p>Classical music is a genre of music that encompasses a wide range of styles and forms composed over a period of several centuries. 
+                    It is characterized by its intricate compositions, use of orchestral instruments, and adherence to traditional musical forms such as the sonata and symphony. 
+                    Classical music often deals with grand themes such as love, loss, and heroism.</p>
+            </div>
+            <div class="column" style="background-color: #000000; border: 2px solid #000; color: white;">
+                <h2>JAZZ</h2>
+                <p>Jazz is a genre of music that originated in African American communities in New Orleans in the late 19th and early 20th centuries. 
+                    It is characterized by its improvisational style, use of swing and syncopated rhythms, and incorporation of blues and ragtime. 
+                    Jazz often deals with themes such as love, heartbreak, and life in the city.</p>
+            </div>
+            <div class="column" style="background-color: wheat; border: 2px solid #000;">
+                <h2>BLUES</h2>
+                <p>Blues is a genre of music that originated in African American communities in the Deep South of the United States in the late 19th and early 20th centuries. 
+                    It is characterized by its use of the blues scale, blue notes, and often somber lyrics dealing with themes such as heartbreak and hardship. 
+                    Blues music has had a profound influence on a wide range of musical genres, including rock and roll, jazz, and R&B.</p>
+                </div>
+            <div class="column" style="background-color: black; border: 2px solid #000; color: white;">
+                <h2>COUNTRY</h2>
+                <p>Electronic music is a genre that uses electronic devices such as synthesizers, drum machines, and computer software to produce music. 
+                    It is characterized by its use of electronic sounds and techniques such as sampling, looping, and manipulation of sound. 
+                    Electronic music encompasses a wide range of styles, including techno, house, trance, and others.</p>
+            </div>
+            <div class="column" style="background-color: wheat; border: 2px solid #000;">
+                <h2>ELECTRONIC</h2>
+                <p>Country music is a genre that originated in the Southern United States in the early 20th century. 
+                    It is characterized by its use of acoustic instruments such as the guitar, banjo, and fiddle, and its emphasis on storytelling through song. 
+                    Country music often deals with themes such as love, heartbreak, and life in the rural South.                </p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

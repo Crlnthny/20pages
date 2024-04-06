@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sound Trax</title>
+
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+        }
+
+        .main{
+            width: 100%;
+            background: url(img/pic2.png);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 26px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: black;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .content{
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: #030303;
+            position: relative;
+        }
+
+        .content p{
+            color: rgb(255, 249, 249);
+
+        }
+
+        .content h2{
+            font-size: 15px;
+            color: black;
+        }
+
+        .content h3{
+            padding-bottom: 20%;
+        }
+
+        .content .par{
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+
+        .content h1{
+            font-family: 'Times New Roman';
+            font-size: 70px;
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 2px;
+        }
+
+        .content .cn{
+            width: 160px;
+            height: 40px;
+            background: #ffffff;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+            
+        }
+
+        .content .cn a{
+            text-decoration: none;
+            color: #000;
+            transition: .3s ease;
+        }
+
+        .cn:hover{
+            background-color: green;
+        }
+
+        .content span{
+            color: white;
+            font-size: 45px
+        }
+
+        .form{
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+            position: absolute;
+            top: -20px;
+            left: 870px;
+            transform: translate(0%,-5%);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .form h2{
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ff7200;
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+
+        .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .form{
+            width: 250px;
+            height: 380px;
+            background: linear-gradient black;
+            position: absolute;
+            top: -20px;
+            left: 870px;
+            transform: translate(0%,-5%);
+            border-radius: 10px;
+            padding: 25px;
+            padding-bottom: 80px;
+        }
+
+        .form h2{
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #000000;
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+
+        .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 2px solid gray;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .form input:focus{
+            outline: none;
+        }
+
+        ::placeholder{
+            color: #fff;
+            font-family: Arial;
+        }
+
+        .btnn{
+            width: 240px;
+            height: 40px;
+            background: #fffcfa;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.4s ease;
+        }
+        .btnn:hover{
+            background: green;
+            color: #ffffff;
+        }
+        .btnn a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .form .link{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .form .link a{
+            text-decoration: none;
+            color: green;
+        }
+        .liw{
+            padding-top: 15px;
+            padding-bottom: 0px;
+            text-align: center;
+        }
+
+        .icons i{
+            color: #ffffff;
+            font-size: 30px;
+            padding-left: 30px;
+            transition: 0.3s ease;
+        }
+        .icons i:hover{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="icon-bar">
+            <a class="active" href="index.html"><i class="fa fa-home"></i></a> 
+            <a href="info.html"><i class="fa fa-info"></i> 
+            <a href="music.html"><i class="fa fa-music"></i></a>
+            <a href="about.html"><i class="fa fa-lock"></i></a>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>JAM OUT<br><span>with your</span> <br>CLAM OUT.</h1>
+            <h2 class="par">Face the music.<br>
+                Bring music to life. Music brings harmony to the world.<br>
+                When words fail, music speaks.</h2>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="btnn"><a href="#">Login</a></button>
+
+                <p class="link">Don't have an account<br>
+                <a href="#">Sign up </a> here</a></p>
+                <p class="liw">Log in with</p>
+
+
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
